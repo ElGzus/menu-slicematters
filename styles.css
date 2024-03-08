@@ -1,0 +1,70 @@
+@keyframes meltAnimation {
+    0%, 100% {
+        transform: scaleY(1) translateY(0);
+        box-shadow: 0 20px 20px -10px rgba(255, 227, 117, 0);
+    }
+    25% {
+        transform: scaleY(0.8) translateY(10px);
+        box-shadow: 0 10px 10px -5px rgba(255, 227, 117, 0.8);
+    }
+    50% {
+        transform: scaleY(1) translateY(0);
+        box-shadow: 0 20px 20px -10px rgba(255, 227, 117, 0);
+    }
+    75% {
+        transform: scaleY(0.8) translateY(10px);
+        box-shadow: 0 10px 10px -5px rgba(255, 227, 117, 0.8);
+    }
+}
+
+body {
+    background-image: url('https://grifine.com.ec/wp-content/uploads/2022/08/textura-acostada-G00189.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.navbar {
+    background-image: url('https://www.shutterstock.com/image-photo/black-sandpaper-texture-260nw-261858539.jpg');
+}
+
+.navbar-brand img {
+    width: 80px;
+    height: auto;
+    transition: transform 0.3s ease;
+    animation: meltAnimation 3s infinite;
+    border-radius: 50%;
+}
+
+.navbar-brand img:hover {
+    transform: scale(1.2);
+    animation: none;
+}
+
+.carousel {
+    margin-top: 25px;
+}
+
+.pizzas {
+    margin-top: 25px;
+    margin-left: 200px;
+    margin-right: 200px;
+    background: none;
+}
+
+.btn-pizza {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+}
+
+.btn-pizza:hover {
+    background-color: #e6462e;
+}
+
+/* Agrega esta regla para cambiar el color del texto dentro del modal a rojo */
+.modal-body {
+    color: #ff0000; /* Código de color rojo */
+}
